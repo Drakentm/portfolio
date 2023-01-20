@@ -32,13 +32,49 @@
         
 
         <form action="https://httpbin.org/get" 
-        method="get"><label for="firstName"> Name:</label>
+        method="get">
+        <p><label for="firstName"> First Name:</label>
         <input type="text" name="" id="firstName"
         placeholder="" autocomplete="on" required 
-        autofocus>
+        autofocus></p>
+        <p>
+        <label for="lastname"> Last Name:</label>
+        <input type="text" name="" id="lastname"
+        placeholder="" autocomplete="on" required 
+        ></p>
+        <p>
+            <label for="Passward">Passward : </label>
+            <input type="password" name="" id="Passward" 
+            autocomplete="on" required>
+
+        </p>
+        <p>
+            <label for="phone">Phone:</label>
+            <input type="tel" name="" id="phone"
+            placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required>
+        </p>
+        <p>
+            <label for="decade"> Decade</label>
+            <input type="number" name="decade" id="decade" min="1800"
+            max="2020" step="10" value="2000">
+        </p>
+        <p>
+            <label for="coffee">Favorite coffee</label>
+            <select name="coffee" id="coffee">
+                <optgroup label="Coffees">
+                <option value="regular coffee">Regular coffee</option>
+                <option value="iced coffee">Iced coffee</option></optgroup>
+               <optgroup label="chai " > <option value="latte" >Latte</option>
+                <option value="cappuccino">Cappuccino</option>
+                <option value="other">Other</option></optgroup>
+            
+            </select>
+        </p>
+
 
         </form>
-
+       
     </article>
 </body>
 </html>
