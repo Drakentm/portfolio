@@ -15,19 +15,27 @@
         }form{
             color: aquamarine;
         }body{
-            background-size: 100%;
+            background: url(/assets/dragon.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }div{
+            background: white;
         }
     </style>
 </head>
-<body background="/assets/dragon.jpg">
+<body>
     <article id="contact">
         <h2>Contact me</h2>
         <p>I'd really like to hear from you</p>
+        
+        
 
         <form action="https://httpbin.org/get" 
         method="get"><label for="firstName"> Name:</label>
         <input type="text" name="" id="firstName"
-        placeholder="">
+        placeholder="" autocomplete="on" required 
+        autofocus>
 
         </form>
 
